@@ -1,0 +1,46 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: #535353;
+}
+.apple{
+    width: 208px;
+    height: 198px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: #65b849;
+    background: linear-gradient(#65b849 17%, #f7b423 17%, #f7b423 34%, #f58122 34%, #f58122 50%,
+    #de3a3c 50%, #de3a3c 66%, #943f96 66%, #943f96 82%, #009fd9 82%, #009fd9 86%);
+    border-radius: 36% 36% 41% 41% / 42% 42% 75% 75%;
+}
+.apple:before{
+    content: '';
+    position: absolute;
+    width: 55px;
+    height: 55px;
+    background: #65b849;
+    margin: -51px 0 0 100px;
+    border-radius: 100px 0;
+    z-index: 5;
+}
+.apple:after{
+    content: '';
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    background: #535353;
+    border-radius: 50%;
+    margin: 28px 0 0 174px;
+    transform: rotate(-53deg);
+    box-shadow: 
+        24px -154px 0 #535353,
+        10px -175px 0 #535353,
+        11px -171px 0 #535353,
+        12px -160px 0 #535353,
+        -215px -7px 0 #535353,
+        -195px 17px 0 #535353,
+        -198px 3px 0 #535353,
+        -198px 13px 0 #535353;
+}
